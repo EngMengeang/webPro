@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="contact.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="main-container">
+        <div class="header">
+          <div class="left">
+            <div>
+              <img src="../image/Artboard 1.png" alt="" />
+            </div>
+            <p>oppsary</p>
+          </div>
+          <div class="mid">
+            <div class="home"><a href="../home/home.html">Home</a></div>
+            <div class="service"><a href="../service/service.html">Service</a></div>
+            <div class="why"><a href="../whyUs/whyUs.html">Why Us</a></div>
+            <div class="about"><a href="../About/about.html">About</a></div>
+            <div class="contact"><a href="../contact/contact.html">Contact</a></div>
+          </div>
+          <div class="right">
+            <div class="login"><a href="../login/login.html">Login</a></div>
+            <div class="sign-up"><a href="../register/register.html">Sign Up</a></div>
+          </div>
+        </div> 
+
+        <div class="content">
+
+          <div class="c-left">
+              <div class="l-first"> <p>For More Information </p> </div>
+              <form action="" id="myForm" onsubmit="handleSubmit(event)">
+
+                <div class="input">
+                  <div> <i class='bx bx-user'></i> <input type="text" placeholder="First Name" > </div>
+                  <div> <i class='bx bx-user'></i> <input type="text" placeholder="Last Name" > </div>
+
+                </div>
+
+                <div class="input">
+
+                  <div> <i class='bx bx-envelope'></i> <input type="email" placeholder="Email" > </div>
+                  
+               </div>
+
+               <div class="input">
+
+                <div> <i class='bx bx-phone'></i> <input type="text" placeholder="Phone Number"></div>
+                
+             </div>
+
+             <div class="service">
+
+             <div><p>choose service</p></div>
+             
+             <div><input type="radio" >  <label for="">Web design</label></div>
+             <div><input type="radio" >  <label for="">Software Engineering</label></div>
+             <div><input type="radio">  <label for="">Data Science</label></div>
+             
+           </div>
+
+           <div class="input submit"><input type="submit" value="Submit" id="submitInput"></div>
+              </form>
+
+              <script>
+                function handleSubmit(event) {
+                    const submitInput = document.getElementById('submitInput');
+                    submitInput.value = "Our Team Will Contact You Soon!"; 
+                    submitInput.disabled = true; 
+        
+                    
+                    // setTimeout(() => {
+                    //     submitInput.value = "Submitted!";
+                    //     // Optionally re-enable the input if needed
+                    //     submitInput.disabled = false;
+                    // }, 3000);
+        
+                    // Prevent actual form submission (for demonstration purposes)
+                    event.preventDefault();
+                }
+            </script>
+          </div>
+
+          <div class="c-right">
+            <div class="r-first"><p>Visit Us </p></div>
+
+            <div class="phone contact-us">
+              <div><i class='bx bx-phone'></i></div>
+              <div><p>+855 123 456 789</p></div>
+              <div><p>+855 123 456 789</p></div>
+            </div>
+
+            <div class="email contact-us">
+              <div><i class='bx bx-envelope'></i></div>
+              <div><p>Coppsary@gmail.com</p></div>
+             
+            </div>
+
+            <div class="email contact-us">
+              <div><i class='bx bx-home' ></i></i></div>
+              <div><p>Cambodia Academy of Digital Technology, Phnom Penh, Cambodia</p></div>
+             
+            </div>
+
+          </div>
+
+        </div>
+            
+
+        <div class="footer">
+          <div class="top">
+              <div class="company">
+                  <img src="../image/Artboard 1.png" alt="">
+                  <p>Your Vision
+                      <br>Our Solution</p>
+              </div>
+      
+              <div class="text">
+                  <p class="title">About</p>
+                  <p>About Us</p>
+                  <p>Contact Us</p>
+                  <p>Service</p>
+      
+              </div>
+      
+              <div class="text">
+                  <p class="title">Help </p>
+                  <p>Help and Support</p>
+                  <p>Join Us</p>
+                 
+              </div>
+      
+              <div class="text">
+                  <p class="title">Follow Us</p>
+                  <div>
+                      <i class='bx bxl-facebook'></i>
+                      <i class='bx bxl-instagram' ></i>
+                      <i class='bx bxl-twitter' ></i>
+                      <i class='bx bxl-linkedin' ></i>
+                  </div>
+                 
+              </div>
+          </div>
+
+      </div>
+    </div>
+  </body>
+</html>

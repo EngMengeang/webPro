@@ -1,0 +1,368 @@
+
+body {
+    background: linear-gradient(#141e30,#243b55);
+    color: white;
+    font-family: "Roboto", sans-serif;
+    padding: 0px;
+    margin: 0px;
+
+}
+
+
+.container {
+    height: 100vh;
+   
+   
+}
+.container .main-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: 1em;
+}
+
+.container .main-container .header {
+    
+    display: flex;
+    padding: 0.5em;
+    border-bottom: 1px solid rgba(0, 255, 255, 0.462);
+   
+}
+
+.container .main-container .header .left{
+    display: flex;
+    padding: 0 1em;
+    color: cyan;
+}
+
+.container .main-container .header .left p{
+    margin: 0px;
+    font-size: 32px;
+   
+    font-weight: bold;
+}
+
+
+.container .main-container .header .left div img{
+   max-width: 36px;
+    max-height: 36px;
+}
+
+
+.container .main-container .header .right div a {
+    
+    color: white;
+    text-decoration: none;
+ 
+ }
+
+
+ .container .main-container .header .right div a:hover{
+   
+    color: cyan;
+    background-color: rgba(127, 125, 125, 0.188);
+    padding: 0.2em;
+}
+
+
+.container .main-container .header .mid{
+    flex: 1 1 0;
+    display: flex;
+    gap: 1em;
+   align-items: center;
+   justify-content: center;
+}
+
+.container .main-container .header .mid .why{
+   border-bottom: 2px solid cyan;
+}
+
+.container .main-container .header .mid div a{
+    color: white;
+    text-decoration: none;
+}
+
+.container .main-container .header .right{
+   display: flex;
+   gap: 1em;
+   align-items: center;
+   color: white;
+   padding: 0 1em;
+
+}
+
+.container .main-container .header .mid div a:hover{
+   
+    color: cyan;
+    background-color: rgba(127, 125, 125, 0.188);
+    padding: 0.2em;
+}
+
+.container .main-container .content{
+   flex: 1 1 0;
+    display: flex;
+   flex-direction: column;
+   justify-content: center;
+   height: 100%;
+
+}
+
+.container .main-container .content  .top{
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+    margin-left: 2em;
+}
+
+.container .main-container .content .top .first p{
+    font-size: 24px;
+    margin: 0px;
+    background-color: rgba(127, 125, 125, 0.188);
+    padding: 0.5em;
+    border-radius: 5px;
+    width: fit-content;
+    
+}
+.container .main-container .content .co-left{
+   flex: 1 1 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
+
+
+.container .main-container .content .co-left .third{
+   flex: 1 1 0;
+   align-self: start;
+   display: grid;
+   grid-template-columns: repeat(4,auto);
+   grid-template-rows: 1fr 1fr;
+   width: 100%;
+   gap: 0.5em;
+   padding: 2em;
+   box-sizing: border-box;
+ }  
+.container .main-container .content .co-left .third .wrap{
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(127, 125, 125, 0.188);
+  justify-content: center;
+  border-radius: 5px;
+ }  
+
+.container .main-container .content .co-left .third .wrap .Tittle{
+    display: flex;
+    gap: 0.5em;
+   justify-items: center;
+}
+
+.container .main-container .content .co-left .third .wrap .Tittle div i{
+   font-size: 18px;
+}
+
+.container .main-container .content .co-left .third .wrap .Tittle p{
+   margin: 0px;
+   font-size: 18px;
+   
+}
+
+.container .main-container .content .co-left .third .wrap p{
+    max-width: 30ch;
+}  
+
+.container .main-container .content .co-right{
+   flex: 1 1 0;
+    
+   
+
+}
+
+.container .main-container .content .co-left .third .wrap:last-child {
+   gap: 1em;
+}  
+
+.container .main-container .content .co-left .third .wrap:last-child div a{
+    text-decoration: none;
+    color: cyan;
+    background-color: #0b2848;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    margin: 1em;
+}  
+
+.container .main-container .footer{
+   
+  
+    color: white;
+    background-color: black;
+    padding: 1em;
+   
+}
+
+.container .main-container .footer .top {
+    
+   display: flex;
+    color: rgba(255, 255, 255, 0.53);
+   justify-content: space-evenly;
+    gap: 1em;
+}
+
+.container .main-container .footer .top .company{
+   
+   display: flex;
+   
+    flex-direction: column;
+    align-items: center;
+}
+
+.container .main-container .footer .top .company img{
+   width: 32px;
+   height: 32px;
+}
+
+
+.container .main-container .footer .top .text{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+ }
+
+ .container .main-container .footer .top .text .title{
+  color: white;
+ }
+
+.container .main-container .footer .top .text p{
+    margin:0px;
+}
+
+
+@media screen and (max-width: 600px)
+{
+    .container {
+        height: auto;
+       
+       
+    }
+
+    .container .main-container .header {
+    
+       flex-direction: column;
+       gap: 0.5em;
+       align-items: center;
+       font-size: smaller;
+       
+    }
+
+    .container .main-container .content .co-left .third{
+        
+        display: grid;
+        grid-template-columns: repeat(2,auto);
+       
+       
+       
+      }  
+
+      .container .main-container .content .co-left .third .wrap{
+        
+        padding: 1em;
+        font-size: small;
+       
+      }
+      
+      .container .main-container .content .top .first p{
+       font-size: medium;
+       
+        
+      }
+   
+
+    .container .main-container .footer{
+
+        font-size: small;
+       
+    }
+}
+
+
+
+@media screen and (min-width: 601px) and (max-width: 1024px)
+{
+
+    .container {
+        height: auto;
+       
+       
+    }
+
+    .container .main-container .header {
+    
+       flex-direction: column;
+       gap: 0.5em;
+       align-items: center;
+       font-size: small;
+      
+       
+    }
+
+
+    .container .main-container .content .co-left .third{
+       
+        display: grid;
+        grid-template-columns: repeat(3,auto);
+
+       
+        
+       
+       
+      }  
+
+      .container .main-container .content .co-left .third .wrap{
+        
+        padding: 1em;
+        font-size: small;
+        
+       
+       
+      }
+
+      .container .main-container .content .co-left .third .after-last{
+        
+        grid-column: 1/2;
+       
+       
+       
+      }
+     
+
+      .container .main-container .content .co-left .third .last{
+        
+        grid-column: 2/4;
+       
+       
+       
+      }
+      
+      .container .main-container .content .top .first p{
+       font-size: medium;
+       
+        
+      }
+   
+
+    .container .main-container .footer{
+
+        font-size: small;
+       
+    }
+    .container .main-container .footer{
+
+        font-size: small;
+       
+    }
+}
